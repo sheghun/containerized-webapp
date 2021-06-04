@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    image: webapp
+    networks:
+      - webapp
+    environment:
+      - REDIS_URL="redis:6379"
+    ports:
+      - "8080:8080"
+    links:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    networks:
+      - webapp
+networks:
+  webapp:
+    driver: bridge
