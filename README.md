@@ -3,7 +3,7 @@
 This is a short Go and Reactjs web app tom find the highest prime number of a given, this structure of this project is inspired 
 by [Golang Project Layout](https://github.com/golang-standards/project-layout)
 
-A live version of this app is hosted on digital ocean 
+A live version of this app is hosted on [here](http://206.189.31.248:8080/) on digital ocean
 
 ## Design Decisions
 I decided to go with a concurrency approach, utilising Golang's concurrency support 
