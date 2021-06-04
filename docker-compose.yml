@@ -11,6 +11,8 @@ services:
       - "8080:8080"
     links:
       - redis
+    depends_on:
+      - redis
 
   redis:
     image: "redis:alpine"
