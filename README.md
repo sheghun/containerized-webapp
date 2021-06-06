@@ -20,6 +20,7 @@ The app and its dependencies are managed by docker compose to run the app use th
 ```bash
 $ make run
 ```
+Visit http://localhost:8080 to view the app
 
 ## Testing
 ```bash
